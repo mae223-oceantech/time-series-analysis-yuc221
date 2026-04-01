@@ -10,7 +10,7 @@ Starter repository for the Week 1 Time Series Analysis lab.
 | `Tutorial_SpectralAnalysis.ipynb` | **Then here** — hands-on tutorial, you write the code |
 | `sample_data.json` | Velocity time series (CLASS10 mooring, 30-min sampling, 16,000 samples) |
 | `la_jolla_tide.json` | NOAA La Jolla tide gauge sea level — full ~100-year record, hourly, in mm |
-| `safari_waves.json` | SAFARI buoy significant wave height — central Pacific, Nov 2025–Apr 2026, ~2-hr sampling |
+| `safari_waves.json` | SAFARI buoy significant wave height — central Pacific, Nov 2025–Apr 2026, ~2-hr sampling (Scripps/WHOI collaboration) |
 | `environment.yml` | Conda environment specification |
 | `github_tutorial.pdf` | Guide to GitHub and GitHub Classroom for first-time users |
 
@@ -133,7 +133,7 @@ The tutorial has two parts:
 Using the La Jolla tide gauge record, you will compute spectra with four different chunk sizes and compare them on a single plot. The goal is to build intuition for the tradeoff between frequency resolution and spectral stability — a core concept in Welch's method. Three reflection questions guide your interpretation, including a calculation of the minimum segment length needed to resolve the M₂ and S₂ tidal constituents.
 
 **Part 2 — SAFARI Wave Analysis**
-You will apply the full analysis pipeline to a new dataset: significant wave height (Hs) measured by a WHOI research buoy in the central North Pacific (33°25'N, 158°W) during the SAFARI 2025–2026 field campaign. The data are transmitted via Iridium satellite and are irregularly sampled, so you will need to interpolate onto a regular time grid before computing the spectrum. You will then identify the dominant periods of wave height variability and compare the result to the tidal spectrum from the demo.
+You will apply the full analysis pipeline to a new dataset: significant wave height (Hs) measured by a research buoy in the central North Pacific (33°25'N, 158°W) during the SAFARI 2025–2026 field campaign — a joint Scripps Institution of Oceanography and Woods Hole Oceanographic Institution (WHOI) collaboration. The data are transmitted via Iridium satellite and are irregularly sampled, so you will need to interpolate onto a regular time grid before computing the spectrum. You will then identify the dominant periods of wave height variability and compare the result to the tidal spectrum from the demo.
 
 > **How to work through the tutorial:** Each code cell either contains fully written code (run it and read it) or has a `# YOUR CODE HERE` comment where you must write something. Read the markdown cells carefully before each exercise — they explain what you need to do and why. Answer the reflection questions in the provided answer cells.
 
